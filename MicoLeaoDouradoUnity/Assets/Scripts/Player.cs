@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float velocidade;
-
+    public float velocidadeMover;
+    public int vida, energia, ataque, defesa, velocidade, acerto;
+    public bool morto;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovimentacaoPlayer();
+
+        if (vida <= 0)
+        {
+            morto = true;
+        }
     }
 
     public void MovimentacaoPlayer()
@@ -27,20 +33,20 @@ public class Player : MonoBehaviour
         if (y == 1)
         {
             //Recebe a posicao para se movimentar.
-            transform.position += new Vector3(0, velocidade, 0);
+            transform.position += new Vector3(0, velocidadeMover, 0);
         }
         else if (x == 1)
         {
-            transform.position += new Vector3(velocidade, 0, 0);
+            transform.position += new Vector3(velocidadeMover, 0, 0);
         }
         else if (y == -1)
         {
-            transform.position += new Vector3(0, -velocidade, 0);
+            transform.position += new Vector3(0, -velocidadeMover, 0);
         }
 
         else if (x == -1)
         {
-            transform.position += new Vector3(-velocidade, 0, 0);
+            transform.position += new Vector3(-velocidadeMover, 0, 0);
         }
     }
   
