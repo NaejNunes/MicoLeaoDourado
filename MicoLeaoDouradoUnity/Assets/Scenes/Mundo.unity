@@ -637,7 +637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 261470070}
   m_Layer: 5
-  m_Name: Folclores
+  m_Name: Folclores (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 34}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &358574340
@@ -1125,13 +1125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4d388adf22ada468e48f29ae0a786a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  formacaoAtual: 0
+  statusPainel: 0
+  idCriaturas: 0
   txtfolcloreSelecionado:
   - {fileID: 1585488336}
   - {fileID: 1566865308}
   - {fileID: 1448169900}
   posicaoOcupada: 000000
-  criaturasFolclore: 000000000000000000
+  criaturaAtivada: 000000000000000000
+  posicaoCompleta: 0
+  painelCriaturas:
+  - {fileID: 261470069}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &594681719
 GameObject:
   m_ObjectHideFlags: 0
