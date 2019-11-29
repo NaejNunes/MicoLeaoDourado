@@ -52,12 +52,13 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[0] == true)
         {
-            controladorFolclore.saci = true;
+            controladorFolclore.criaturas[0] = true;   
             controladorFolclore.AdicionarFolclores();
+            botaoSelecionado[0] = false;
         }
         else if(botaoSelecionado[0] == false)
         {
-            controladorFolclore.saci = false;
+            controladorFolclore.criaturas[0] = false;
         }
     }
 
@@ -67,12 +68,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[1] == true)
         {
-            controladorFolclore.curupira = true;
+            controladorFolclore.criaturas[1] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[1] == false)
         {
-            controladorFolclore.curupira = false;
+            controladorFolclore.criaturas[1] = false;
         }
     }
 
@@ -82,12 +83,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[2] == true)
         {
-            controladorFolclore.caipora = true;
+            controladorFolclore.criaturas[2] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[2] == false)
         {
-            controladorFolclore.caipora = false;
+            controladorFolclore.criaturas[2] = false;
         }
     }
 
@@ -97,12 +98,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[3] == true)
         {
-            controladorFolclore.iara = true;
+            controladorFolclore.criaturas[3] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[3] == false)
         {
-            controladorFolclore.iara = false;
+            controladorFolclore.criaturas[3] = false;
         }
     }
 
@@ -112,12 +113,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[4] == true)
         {
-            controladorFolclore.boto = true;
+            controladorFolclore.criaturas[4] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[4] == false)
         {
-            controladorFolclore.boto = false;
+            controladorFolclore.criaturas[4] = false;
         }
     }
 
@@ -127,12 +128,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[5] == true)
         {
-            controladorFolclore.lobisomem = true;
+            controladorFolclore.criaturas[5] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[5] == false)
         {
-            controladorFolclore.lobisomem = false;
+            controladorFolclore.criaturas[5] = false;
         }
     }
 
@@ -142,12 +143,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[6] == true)
         {
-            controladorFolclore.boitata = true;
+            controladorFolclore.criaturas[6] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[6] == false)
         {
-            controladorFolclore.boitata = false;
+            controladorFolclore.criaturas[6] = false;
         }
     }
 
@@ -157,12 +158,12 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[7] == true)
         {
-            controladorFolclore.mula = true;
+            controladorFolclore.criaturas[7] = true;
             controladorFolclore.AdicionarFolclores();
         }
         else if (botaoSelecionado[7] == false)
         {
-            controladorFolclore.mula = false;
+            controladorFolclore.criaturas[7] = false;
         }
     }
 
@@ -172,13 +173,13 @@ public class BoteosControle : MonoBehaviour
 
         if (botaoSelecionado[8] == true)
         {
-            controladorFolclore.cuca = true;
+            controladorFolclore.criaturas[8] = true;
             controladorFolclore.AdicionarFolclores();
 
         }
         else if (botaoSelecionado[8] == false)
         {
-            controladorFolclore.cuca = false;
+            controladorFolclore.criaturas[8] = false;
         }
     }
 }
