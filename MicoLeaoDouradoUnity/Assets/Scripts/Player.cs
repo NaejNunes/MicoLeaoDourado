@@ -6,7 +6,9 @@ public class Player : MonoBehaviour
 {
     public float velocidadeMover;
     public int vida, energia, ataque, defesa, velocidade, acerto;
-    public bool morto;
+    public bool morto, estadoPainel;
+
+    public GameObject painelPausa;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovimentacaoPlayer();
-
+        PainelMenus();
         if (vida <= 0)
         {
             morto = true;
@@ -48,6 +50,25 @@ public class Player : MonoBehaviour
         {
             transform.position += new Vector3(-velocidadeMover, 0, 0);
         }
+    }
+
+     public void PainelMenus()
+    {
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            estadoPainel = !estadoPainel;
+
+             if (estadoPainel == true)
+            {
+            painelPausa.SetActive(true);
+            }
+            else
+            {
+             painelPausa.SetActive(false);
+            }
+        
+        }
+        
     }
   
 }

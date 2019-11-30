@@ -9,7 +9,9 @@ public class FolcloreControlador : MonoBehaviour
     public Text[] txtfolcloreSelecionado;
     public bool[] posicaoOcupada, criaturaAtivada;
     public bool posicaoCompleta;
-    public GameObject[] painelCriaturas;
+    public GameObject[] painelCriaturas, painelSobreCriaturas;
+
+    public GameObject botaoResetar;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +20,21 @@ public class FolcloreControlador : MonoBehaviour
 
         idCriaturas = 10;
 
-        painelCriaturas[0].SetActive(false);
-        painelCriaturas[1].SetActive(false);
-        painelCriaturas[2].SetActive(false);
-
         posicaoOcupada[0] = false;
         posicaoOcupada[1] = false;
         posicaoOcupada[2] = false;
+
+        painelSobreCriaturas[0].SetActive(false);
+        painelSobreCriaturas[1].SetActive(false);
+        painelSobreCriaturas[2].SetActive(false);
+        painelSobreCriaturas[3].SetActive(false);
+        painelSobreCriaturas[4].SetActive(false);
+        painelSobreCriaturas[5].SetActive(false);
+        painelSobreCriaturas[6].SetActive(false);
+        painelSobreCriaturas[7].SetActive(false);
+        painelSobreCriaturas[8].SetActive(false);
+
+        botaoResetar.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,59 +49,46 @@ public class FolcloreControlador : MonoBehaviour
         //ATIVA OS PAINEIS DE ESCOLHA
         if (statusPainel == 0)
         {
-            painelCriaturas[0].SetActive(true);
-            painelCriaturas[1].SetActive(false);
-            painelCriaturas[2].SetActive(false);
-            painelCriaturas[3].SetActive(false);
-
             posicaoOcupada[0] = false;
             posicaoOcupada[1] = false;
             posicaoOcupada[2] = false;
 
             posicaoCompleta = false;
+
+            botaoResetar.SetActive(false);
         }
 
         else if (statusPainel == 1)
         {
-            painelCriaturas[0].SetActive(false);
-            painelCriaturas[1].SetActive(true);
-            painelCriaturas[2].SetActive(false);
-            painelCriaturas[3].SetActive(false);
-
             posicaoOcupada[0] = true;
             posicaoOcupada[1] = false;
             posicaoOcupada[2] = false;
 
             posicaoCompleta = false;
+
+            botaoResetar.SetActive(false);
         }
 
         else if (statusPainel == 2)
         {
-            painelCriaturas[0].SetActive(false);
-            painelCriaturas[0].SetActive(false);
-            painelCriaturas[1].SetActive(true);
-            painelCriaturas[2].SetActive(false);
-
             posicaoOcupada[0] = true;
             posicaoOcupada[1] = true;
             posicaoOcupada[2] = false;
 
             posicaoCompleta = false;
+
+            botaoResetar.SetActive(false);
         }
 
         else if (statusPainel == 3)
         {
-            painelCriaturas[0].SetActive(false);
-            painelCriaturas[1].SetActive(false);
-            painelCriaturas[2].SetActive(false);
-            painelCriaturas[3].SetActive(true);
-
             posicaoOcupada[0] = true;
             posicaoOcupada[1] = true;
             posicaoOcupada[2] = true;
 
             posicaoCompleta = true;
 
+            botaoResetar.SetActive(true);
         }
 
         //FAZ COM QUE O STATUS DO PAINEL NAO ULTRAPASSE OS LIMITES
@@ -294,9 +291,17 @@ public class FolcloreControlador : MonoBehaviour
         posicaoCompleta = false;
 
         painelCriaturas[0].SetActive(true);
-        painelCriaturas[1].SetActive(false);
-        painelCriaturas[2].SetActive(false);
-        painelCriaturas[3].SetActive(false);
+  
+        painelSobreCriaturas[0].SetActive(false);
+        painelSobreCriaturas[1].SetActive(false);
+        painelSobreCriaturas[2].SetActive(false);
+        painelSobreCriaturas[3].SetActive(false);
+        painelSobreCriaturas[4].SetActive(false);
+        painelSobreCriaturas[5].SetActive(false);
+        painelSobreCriaturas[6].SetActive(false);
+        painelSobreCriaturas[7].SetActive(false);
+        painelSobreCriaturas[8].SetActive(false);
+        
 
         statusPainel = 0;
     }
