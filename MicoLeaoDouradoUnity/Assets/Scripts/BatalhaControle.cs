@@ -8,6 +8,7 @@ public class BatalhaControle : MonoBehaviour
     public int idBotoes;
     public bool BotaoEscolhido;
     public GameObject[] botoes;
+    public Text[] txtCriaturas;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,16 @@ public class BatalhaControle : MonoBehaviour
     void Update()
     {
         NavegarAcoes();
+        InstanciarCriaturas();
+    }
+
+    public void InstanciarCriaturas()
+    {
+        txtCriaturas[0].text = "" + PlayerPrefs.GetString("PosicaoUm");
+        txtCriaturas[1].text = "" + PlayerPrefs.GetString("PosicaoDois");
+        txtCriaturas[2].text = "" + PlayerPrefs.GetString("PosicaoTres");
+
+        txtCriaturas[3].text = "Jogador";
     }
 
     public void NavegarAcoes()

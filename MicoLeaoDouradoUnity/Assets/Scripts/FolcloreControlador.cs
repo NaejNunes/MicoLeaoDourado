@@ -35,6 +35,10 @@ public class FolcloreControlador : MonoBehaviour
         painelSobreCriaturas[8].SetActive(false);
 
         botaoResetar.SetActive(false);
+
+        PlayerPrefs.GetString("PosicaoUm");
+        PlayerPrefs.GetString("PosicaoDois");
+        PlayerPrefs.GetString("PosicaoTres");
     }
 
     // Update is called once per frame
@@ -116,46 +120,55 @@ public class FolcloreControlador : MonoBehaviour
             if (idCriaturas == 0)
             {
                 txtfolcloreSelecionado[0].text = "Saci";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 1)
             {
                 txtfolcloreSelecionado[0].text = "Curupira";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 2)
             {
                 txtfolcloreSelecionado[0].text = "Caipora";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 3)
             {
                 txtfolcloreSelecionado[0].text = "Iara";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 4)
             {
                 txtfolcloreSelecionado[0].text = "Boto";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 5)
             {
                 txtfolcloreSelecionado[0].text = "Lobisomem";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 6)
             {
                 txtfolcloreSelecionado[0].text = "Boitata";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 7)
             {
                 txtfolcloreSelecionado[0].text = "Mula";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
 
             else if (idCriaturas == 8)
             {
                 txtfolcloreSelecionado[0].text = "Cuca";
+                PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
             }
             else if (idCriaturas == 10)
             {
@@ -169,50 +182,60 @@ public class FolcloreControlador : MonoBehaviour
             if (idCriaturas == 0)
             {
                 txtfolcloreSelecionado[1].text = "Saci";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 1)
             {
                 txtfolcloreSelecionado[1].text = "Curupira";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 2)
             {
                 txtfolcloreSelecionado[1].text = "Caipora";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 3)
             {
                 txtfolcloreSelecionado[1].text = "Iara";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 4)
             {
                 txtfolcloreSelecionado[1].text = "Boto";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 5)
             {
                 txtfolcloreSelecionado[1].text = "Lobisomem";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 6)
             {
                 txtfolcloreSelecionado[1].text = "Boitata";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 7)
             {
                 txtfolcloreSelecionado[1].text = "Mula";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
 
             else if (idCriaturas == 8)
             {
                 txtfolcloreSelecionado[1].text = "Cuca";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
             else if (idCriaturas == 10)
             {
                 txtfolcloreSelecionado[2].text = "Vazio";
+                PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
             }
         }
 
@@ -221,46 +244,55 @@ public class FolcloreControlador : MonoBehaviour
             if (idCriaturas == 0)
             {
                 txtfolcloreSelecionado[2].text = "Saci";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 1)
             {
                 txtfolcloreSelecionado[2].text = "Curupira";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 2)
             {
                 txtfolcloreSelecionado[2].text = "Caipora";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 3)
             {
                 txtfolcloreSelecionado[2].text = "Iara";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 4)
             {
                 txtfolcloreSelecionado[2].text = "Boto";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 5)
             {
                 txtfolcloreSelecionado[2].text = "Lobisomem";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 6)
             {
                 txtfolcloreSelecionado[2].text = "Boitata";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 7)
             {
                 txtfolcloreSelecionado[2].text = "Mula";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }
 
             else if (idCriaturas == 8)
             {
                 txtfolcloreSelecionado[2].text = "Cuca";
+                PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
             }         
         }
 
@@ -271,8 +303,14 @@ public class FolcloreControlador : MonoBehaviour
         idCriaturas = 10;
 
         txtfolcloreSelecionado[0].text = "Vazio";
+        PlayerPrefs.SetString("PosicaoUm", txtfolcloreSelecionado[0].text);
+
         txtfolcloreSelecionado[1].text = "Vazio";
+        PlayerPrefs.SetString("PosicaoDois", txtfolcloreSelecionado[1].text);
+
         txtfolcloreSelecionado[2].text = "Vazio";
+        PlayerPrefs.SetString("PosicaoTres", txtfolcloreSelecionado[2].text);
+
 
         posicaoOcupada[0] = false;
         posicaoOcupada[1] = false;
@@ -302,8 +340,8 @@ public class FolcloreControlador : MonoBehaviour
         painelSobreCriaturas[7].SetActive(false);
         painelSobreCriaturas[8].SetActive(false);
         
-
         statusPainel = 0;
+
     }
 }
 

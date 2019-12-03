@@ -70,7 +70,7 @@ public class BoteosControle : MonoBehaviour
         if (controladorFolclore.statusPainel == 0 && botaoSelecionado[0] == true && controladorFolclore.posicaoCompleta == false|| controladorFolclore.statusPainel == 1 && botaoSelecionado[0] == true && controladorFolclore.posicaoCompleta == false || controladorFolclore.statusPainel == 2 && botaoSelecionado[0] == true && controladorFolclore.posicaoCompleta == false)
         {
             controladorFolclore.idCriaturas = 0;
-            controladorFolclore.criaturaAtivada[0] = true;
+            controladorFolclore.criaturaAtivada[0] = true;            
             controladorFolclore.statusPainel++;
             controladorFolclore.painelSobreCriaturas[0].SetActive(true);
         }
@@ -89,9 +89,9 @@ public class BoteosControle : MonoBehaviour
         {
             controladorFolclore.idCriaturas = 1;
             controladorFolclore.criaturaAtivada[1] = true;
-            controladorFolclore.statusPainel++;        }
+            controladorFolclore.statusPainel++;       
             controladorFolclore.painelSobreCriaturas[1].SetActive(true);
-
+        }
     }
 
     public void SelecionarCaipora()
