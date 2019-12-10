@@ -278,138 +278,164 @@ public class EscolhaDeCriaturas : MonoBehaviour
         if (posicaoUm[0] == 1)
         {
             imgCriaturas[0].SetActive(true);
+            imgCriaturas[27].SetActive(true);
             painelSelecionada[0].SetActive(true);
-
         }
         if (posicaoUm[1] == 2)
         {
             imgCriaturas[1].SetActive(true);
+            imgCriaturas[28].SetActive(true);
             painelSelecionada[1].SetActive(true);
         }
          if (posicaoUm[2] == 3)
         {
             imgCriaturas[2].SetActive(true);
+            imgCriaturas[29].SetActive(true);
             painelSelecionada[2].SetActive(true);
         }
          if (posicaoUm[3] == 4)
         {
             imgCriaturas[3].SetActive(true);
+            imgCriaturas[30].SetActive(true);
             painelSelecionada[3].SetActive(true);
         }
          if (posicaoUm[4] == 5)
         {
             imgCriaturas[4].SetActive(true);
+            imgCriaturas[31].SetActive(true);
             painelSelecionada[4].SetActive(true);
         }
          if (posicaoUm[5] == 6)
         {
             imgCriaturas[5].SetActive(true);
+            imgCriaturas[32].SetActive(true);
             painelSelecionada[5].SetActive(true);
         }
          if (posicaoUm[6] == 7)
         {
             imgCriaturas[6].SetActive(true);
+            imgCriaturas[33].SetActive(true);
             painelSelecionada[6].SetActive(true);
         }
          if (posicaoUm[7] == 8)
         {
             imgCriaturas[7].SetActive(true);
+            imgCriaturas[34].SetActive(true);
             painelSelecionada[7].SetActive(true);
         }
          if (posicaoUm[8] == 9)
         {
             imgCriaturas[8].SetActive(true);
+            imgCriaturas[35].SetActive(true);
             painelSelecionada[8].SetActive(true);
         }
          if (posicaoDois[0] == 10)
         {
             imgCriaturas[9].SetActive(true);
+            imgCriaturas[36].SetActive(true);
             painelSelecionada[0].SetActive(true);
         }
          if (posicaoDois[1] == 11)
         {
             imgCriaturas[10].SetActive(true);
+            imgCriaturas[37].SetActive(true);
             painelSelecionada[1].SetActive(true);
         }
          if (posicaoDois[2] == 12)
         {
             imgCriaturas[11].SetActive(true);
+            imgCriaturas[38].SetActive(true);
             painelSelecionada[2].SetActive(true);
         }
          if (posicaoDois[3] == 13)
         {
             imgCriaturas[12].SetActive(true);
+            imgCriaturas[39].SetActive(true);
             painelSelecionada[3].SetActive(true);
         }
          if (posicaoDois[4] == 14)
         {
             imgCriaturas[13].SetActive(true);
+            imgCriaturas[40].SetActive(true);
             painelSelecionada[4].SetActive(true);
         }
          if (posicaoDois[5] == 15)
         {
             imgCriaturas[14].SetActive(true);
+            imgCriaturas[41].SetActive(true);
             painelSelecionada[5].SetActive(true);
         }
          if (posicaoDois[6] == 16)
         {
             imgCriaturas[15].SetActive(true);
+            imgCriaturas[42].SetActive(true);
             painelSelecionada[6].SetActive(true);
         }
          if (posicaoDois[7] == 17)
         {
             imgCriaturas[16].SetActive(true);
+            imgCriaturas[43].SetActive(true);
             painelSelecionada[7].SetActive(true);
         }
          if (posicaoDois[8] == 18)
         {
             imgCriaturas[17].SetActive(true);
+            imgCriaturas[44].SetActive(true);
             painelSelecionada[8].SetActive(true);
         }
          if (posicaoTres[0] == 19)
         {
             imgCriaturas[18].SetActive(true);
+            imgCriaturas[45].SetActive(true);
             painelSelecionada[0].SetActive(true);
         }
          if (posicaoTres[1] == 20)
         {
             imgCriaturas[19].SetActive(true);
+            imgCriaturas[46].SetActive(true);
             painelSelecionada[1].SetActive(true);
         }
          if (posicaoTres[2] == 21)
         {
             imgCriaturas[20].SetActive(true);
+            imgCriaturas[47].SetActive(true);
             painelSelecionada[2].SetActive(true);
         }
          if (posicaoTres[3] == 22)
         {
             imgCriaturas[21].SetActive(true);
+            imgCriaturas[48].SetActive(true);
             painelSelecionada[3].SetActive(true);
         }
          if (posicaoTres[4] == 23)
         {
             imgCriaturas[22].SetActive(true);
+            imgCriaturas[49].SetActive(true);
             painelSelecionada[4].SetActive(true);
         }
          if (posicaoTres[5] == 24)
         {
             imgCriaturas[23].SetActive(true);
+            imgCriaturas[50].SetActive(true);
             painelSelecionada[5].SetActive(true);
         }
          if (posicaoTres[6] == 25)
         {
             imgCriaturas[24].SetActive(true);
+            imgCriaturas[51].SetActive(true);
             painelSelecionada[6].SetActive(true);
         }
          if (posicaoTres[7] == 26)
         {
             imgCriaturas[25].SetActive(true);
+            imgCriaturas[52].SetActive(true);
             painelSelecionada[7].SetActive(true);
 
         }
          if (posicaoTres[8] == 27)
         {
             imgCriaturas[26].SetActive(true);
+            imgCriaturas[53].SetActive(true);
             painelSelecionada[8].SetActive(true);
         }
 
@@ -430,7 +456,7 @@ public class EscolhaDeCriaturas : MonoBehaviour
         IdGrupoCheio = 0;
 
         //DESATIVAR CRIATURAS SELECIONADAS
-        for (int i = 0; i < 27; i++)
+        for (int i = 0; i < 54; i++)
         {
             imgCriaturas[i].SetActive(false);
         }

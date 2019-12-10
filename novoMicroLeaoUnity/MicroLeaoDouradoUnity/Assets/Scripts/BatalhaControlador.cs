@@ -342,7 +342,9 @@ public class BatalhaControlador : MonoBehaviour
         {
             if (vezPlayer == 0 && posicaoDois[0] == 1)
             {
-                //Ataca
+                Debug.Log("Atacou");
+                //Causar Dano
+
             }
         }
 
